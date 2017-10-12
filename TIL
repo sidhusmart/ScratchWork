@@ -1,0 +1,15 @@
+1. Dense versus Sparse representations of Sparse vectors
+    - One Hot Encoding in Spark returns a Dense vector of ones
+    - If your model is not built on Spark MLLIB you will need to conver this to Pandas or create a local version through some workarounds
+    - When you convert it using toPandas, that too continues the Dense representation
+    - Use the in-built methods to convert this to a sparse representations of 1s and 0s
+    - Or you could change the model to diffrentiate how this reads your features and allow it to read Dense vectors
+    
+2. Genetic Algorithms
+    - One of the optimization algorithms to solve the ML optimization problem more quickly
+    - Tries to mimic the survival of the fittest real life scenario in the case of models
+    - Several models are trained to create an initial population
+    - Only the best n models are chosen to go to the next round - these are called as parents
+    - Parents are interbred and mutated to create several other slightly different models
+    - Then again selection of the best model happens across all these models
+    - And so on till a certain set limit is reached (if set) or through some other convergence criteria
