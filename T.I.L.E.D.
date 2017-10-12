@@ -1,3 +1,5 @@
+THINGS I LEARN EVERY DAY (T.I.L.E.D.)
+
 1. Dense versus Sparse representations of Sparse vectors
     - One Hot Encoding in Spark returns a Dense vector of ones
     - If your model is not built on Spark MLLIB you will need to conver this to Pandas or create a local version through some workarounds
